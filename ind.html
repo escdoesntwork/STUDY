@@ -56,7 +56,7 @@
     
       <section class="CSS_Ani">
         <h2 class="css">CSS</h2>
-        <h2 class="animation">ANIMATION</h2>
+        <h2 class="animation_css">ANIMATION</h2>
       </section>
 
       <section class="animation_content">
@@ -81,7 +81,56 @@
           <h1>04</h1>
         </div>
       </section>
+
+      <section class="container2">
+        <div class="space-holder2">
+          <div class="sticky2">
+            <div class="horizontal2">
+              <section role="feed" class="cards2">
+                <section class="onepage2">
+                  <section class="UIUX">
+                    <h2 class="UI">UI</h2>
+                    <h2 class="DESIGN">DESIGN</h2>
+                    <img src="img/michael.png" class="michael">
+                  </section>
+                    <section class="UI_UX_Design">
+                      <section class="fix_des">
+                        <section class="designs_">
+                          <div class="des1">
+                            <h2>UI_DESIGN1.</h2>
+                            <div></div>
+                            <h1>01</h1>
+                          </div>
+                        </section>
+                        <section class="designs_">
+                          <div class="des2">
+                            <h2>UI_DESIGN2.</h2>
+                            <div></div>
+                            <h1>02</h1>
+                          </div>
+                        </section>
+                        <section class="designs_">
+                          <div class="des3">
+                            <h2>UI_DESIGN3.</h2>
+                            <div></div>
+                            <h1>03</h1>
+                          </div>
+                        </section>
+
+                        <section class="Moon">
+                          <img src="img/moon.png" class="moon">
+                        </section>
+
+                    </section>
+                  </section>
+                </section>
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
     
+      
     
     <script>
         const spaceHolder = document.querySelector('.space-holder');
@@ -102,6 +151,26 @@
 
         window.addEventListener('resize', () => {
           spaceHolder.style.height = `${calcDynamicHeight(horizontal)}px`;
+        });
+
+        const spaceHolder2 = document.querySelector('.space-holder2');
+        const horizontal2 = document.querySelector('.horizontal2');
+        spaceHolder2.style.height = `${calcDynamicHeight(horizontal2)}px`;
+
+        function calcDynamicHeight2(ref) {
+          const vw2 = window.innerWidth;
+          const vh2 = window.innerHeight;
+          const objectWidth2 = ref.scrollWidth;
+          return objectWidth2 - vw2 + vh2 + 150; // 150 is the padding (in pixels) desired on the right side of the .cards container. This can be set to whatever your styles dictate
+        }
+
+        window.addEventListener('scroll', () => {
+          const sticky2 = document.querySelector('.sticky2');
+          horizontal2.style.transform = `translateX(-${sticky2.offsetTop}px)`;
+        });
+
+        window.addEventListener('resize', () => {
+          spaceHolder2.style.height = `${calcDynamicHeight(horizontal2)}px`;
         });
     </script>
 </body>

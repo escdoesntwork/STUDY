@@ -30,7 +30,7 @@ body {
 .bgimg {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 102%;
   left: 0px;
   z-index: 1;
 }
@@ -243,7 +243,7 @@ body {
   -webkit-text-stroke: 1px;
   -webkit-text-stroke-color: white;
 }
-.animation {
+.animation_css {
   margin-top: -650px;
   margin-left: 50px;
   font-family: Eiko;
@@ -416,3 +416,218 @@ body {
   -webkit-text-stroke-color: #fff;
   z-index: 3;
 }
+
+/* 가로스크롤2 */
+.container2 {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: #1b1614;
+}
+
+.space-holder2 {
+  position: relative;
+  width: 100%;
+}
+
+.sticky2 {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  overflow-y: hidden;
+}
+
+.horizontal2 {
+  position: absolute;
+  height: 100%;
+  will-change: transform;
+}
+
+.cards2 {
+  position: relative;
+  height: 600px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.onepage2 {
+  position: relative;
+  width: 4500px;
+  background: #1b1614;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.UIUX {
+  position: relative;
+  width: 100%;
+  height: 1000px;
+  background: #1b1614;
+}
+.michael {
+  transform: translate(35%, -140%);
+  position: absolute;
+  z-index: 1;
+}
+.UI {
+  transform: translate(2%, -40%);
+  position: relative;
+  font-family: Eiko;
+  font-size: 500px;
+  color: #1b1614;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: white;
+  z-index: 2;
+}
+.DESIGN {
+  transform: translate(2%, -100%);
+  position: relative;
+  margin-top: -650px;
+  margin-left: 50px;
+  font-family: Eiko;
+  font-size: 200px;
+  color: #fff;
+  z-index: 2;
+}
+
+.fix_des {
+  display: flex;
+  justify-content: space-around;
+}
+.fix_des > section {
+  margin-left: 100px;
+  margin-right: 150px;
+}
+
+.des1 {
+  position: relative;
+  width: 550px;
+  height: 650px;
+  margin-top: 230px;
+}
+.des1 > h2 {
+  position: relative;
+  left: -255px;
+  font-family: Eiko;
+  font-size: 30px;
+  color: #fff;
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  z-index: 2;
+}
+.des1 > div {
+  position: relative;
+  left: 40px;
+  bottom: 25px;
+  width: 500px;
+  height: 600px;
+  background: #000;
+  z-index: 1;
+  box-shadow: #333 20px -20px;
+}
+.des1 > h1 {
+  position: relative;
+  font-family: Eiko;
+  font-size: 200px;
+  top: -600px;
+  margin-left: -100px;
+  color: #1b1614;
+  text-shadow: #333 10px -13px;
+  -webkit-text-stroke: 0.5px;
+  -webkit-text-stroke-color: #fff;
+  z-index: 3;
+}
+
+/* 2 */
+.des2 {
+  position: relative;
+  width: 550px;
+  height: 650px;
+  margin-top: 230px;
+}
+.des2 > h2 {
+  position: relative;
+  left: -255px;
+  font-family: Eiko;
+  font-size: 30px;
+  color: #fff;
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  z-index: 2;
+}
+.des2 > div {
+  position: relative;
+  left: 40px;
+  bottom: 25px;
+  width: 500px;
+  height: 600px;
+  background: #000;
+  z-index: 1;
+  box-shadow: #333 20px -20px;
+}
+.des2 > h1 {
+  position: relative;
+  font-family: Eiko;
+  font-size: 200px;
+  top: -600px;
+  margin-left: -100px;
+  color: #1b1614;
+  text-shadow: #333 10px -13px;
+  -webkit-text-stroke: 0.5px;
+  -webkit-text-stroke-color: #fff;
+  z-index: 3;
+}
+
+/* 3 */
+.des3 {
+  position: relative;
+  width: 550px;
+  height: 650px;
+  margin-top: 230px;
+}
+.des3 > h2 {
+  position: relative;
+  left: -255px;
+  font-family: Eiko;
+  font-size: 30px;
+  color: #fff;
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  z-index: 2;
+}
+.des3 > div {
+  position: relative;
+  left: 40px;
+  bottom: 25px;
+  width: 500px;
+  height: 600px;
+  background: #000;
+  z-index: 1;
+  box-shadow: #333 20px -20px;
+}
+.des3 > h1 {
+  position: relative;
+  font-family: Eiko;
+  font-size: 200px;
+  top: -600px;
+  margin-left: -100px;
+  color: #1b1614;
+  text-shadow: #333 10px -13px;
+  -webkit-text-stroke: 0.5px;
+  -webkit-text-stroke-color: #fff;
+  z-index: 3;
+}
+
+/* moon */
+.moon {
+  position: relative;
+  transform: translate(100%, 7%);
+  margin-top: 100px;
+  margin-left: -400px;
+}
+
+/* 달에서 빔 나와소 색 전환되는 애니메이션 넣기 */
